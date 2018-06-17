@@ -261,12 +261,12 @@ if (message.content === "/aide defense"){
 if (message.content === "/ ${message.username} carte"){  
 
     const embed = new Discord.RichEmbed()
-    .setTitle("Carte de ${username}")
+    .setTitle("Carte de <username>")
     .setColor(0xcc0099)
-    .setDescription("Carte Nationale d'identité de ${username}")
+    .setDescription("Carte Nationale d'identité de <username>")
     .setFooter("Si il y a un problème , voir chef de guilde")
-    .addField("Stats de ${username}")
-      "Nom = ${username}"()
+    .addField("Stats de <username>")
+      "Nom = <username>"()
       
     message.channel.send({embed});
 }
