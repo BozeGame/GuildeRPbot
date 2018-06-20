@@ -258,15 +258,15 @@ if (message.content === "/aide defense"){
       
     message.channel.send({embed});
 }
-if (message.content === "/ ${message.client.username} carte"){  
+if (message.content === "/ ${message.reply} carte"){  
 
     const embed = new Discord.RichEmbed()
-    .setTitle("Carte de ${client.username}")
+    .setTitle("Carte de ${message.reply}")
     .setColor(0xcc0099)
-    .setDescription("Carte Nationale d'identité de ${client.username}")
+    .setDescription("Carte Nationale d'identité de ${message.reply}")
     .setFooter("Si il y a un problème , voir chef de guilde")
-    .addField("Stats de ${client.username}")
-      "Nom = ${client.username}"()
+    .addField("Stats de ${message.reply}")
+      "Nom = ${message.reply}"()
       
     message.channel.send({embed});
 }
