@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 
 var prefix = ("/")
-var random = 0
+var randnum = 0
 
 bot.on('ready', function() {
     bot.user.setUsername("GuildeRP")
