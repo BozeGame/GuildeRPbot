@@ -97,8 +97,9 @@ if (randnum == 20){
     shield ++
 }}
 
-if (message.content === "/réserve")
-    message.channel.send(`Nombre de stock de nourriture + bouffe ,`)
+if (message.content === "/reserve"){
+    message.channel.send(`Nombre de stock de nourriture + bouffe \nNombre de kit de soin + kit \nNombre de costume de protection + shield`)
+}
 }
 )
 
