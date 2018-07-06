@@ -96,10 +96,6 @@ if (randnum == 20){
     message.channel.send(`Vous trouvez dans ce coffre de **l'équipement de protection**`);
     shield ++
 }}
-
-if (message.content === "/reserve"){
-    message.channel.send(`Nombre de stock de nourriture + bouffe \nNombre de kit de soin + kit \nNombre de costume de protection + shield`)
-}
 }
 )
 
