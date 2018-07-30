@@ -15,7 +15,13 @@ bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
 
-if (message.content === "/coffre"){
+if (message.content.startsWith("/coffre")){
+if("437883948694241290".includes(message.author.id)){
+    let args = message.content.split(" ").slice(1)
+    let thingToEcho = args.join(" ")
+    message.delete();
+    message.channel.send(`${thingToEcho}`)  
+}
     random();
 if (randnum == 1){
     message.channel.send(`Vous trouvez dans ce coffre un **pompe**`);
@@ -76,7 +82,8 @@ if (randnum == 19){
 }
 if (randnum == 20){
     message.channel.send(`Vous trouvez dans ce coffre de **l'équipement de protection**`);
-}}
+}
+}
 }
 )
 
